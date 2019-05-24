@@ -21,7 +21,7 @@
           </svg>
         </button>
         <label for="search" class="visually-hidden">Поиск по сайту</label>
-        <input type="text" id="search" name="search" placeholder="Поиск:" class="search-form__search-input">
+        <input type="text" id="search" name="search" placeholder="Поиск:" class="search-form__search-input" required>
       </form>
       <a href="#" class="site-header__bookmarks">
         Закладки: <span class="site-header__bookmarks-count">0</span>
@@ -316,8 +316,10 @@
     </p>
   </footer>
   <section class="modal modal-feeback">
-    <h2 class="visually-hidden">Напишите нам!</h2>
-    <!-- TODO: Add feedback form -->
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form class="feedback-from" action="https://echo.htmlacademy.ru" method="POST">
+
+    </form>
     <span class="modal-close">X</span>
   </section>
   <section class="modal modal-map">
