@@ -8,8 +8,7 @@
 
 <body>
   <header class="site-header">
-    <!-- TODO: refactor header with forms -->
-    <a href="#" class="site-header__logo site-logo">
+    <a href="#" class="site-header__logo site-logo" aria-label="На главную">
       <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
     </a>
     <div class="site-header__user-interface">
@@ -251,7 +250,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a href="#" class="site-footer__logo site-logo">
+    <a href="#" class="site-footer__logo site-logo" aria-label="На главную">
       <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
     </a>
     <nav class="site-footer__navigation">
@@ -317,15 +316,27 @@
   </footer>
   <section class="modal modal-feeback">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <form class="feedback-from" action="https://echo.htmlacademy.ru" method="POST">
-
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <label class="feedback-form__label" for="feedbackName">Ваше имя:</label>
+      <input class="feeback-form__text-input" type="text" name="name" id="feedbackName" placeholder="Имя Фамилия"
+        required>
+      <label class="feedback-form__label" for="feedbackMail">Ваш e-mail:</label>
+      <input class="feeback-form__text-input" type="email" name="email" id="feedbackMail"
+        placeholder="email@example.com" required>
+      <label class="feedback-form__label" for="feedbackText">Текст письма:</label>
+      <textarea class="feeback-form__text-input" id="feedbackText" name="text" placeholder="В свободной форме" rows="5"
+        required></textarea>
+      <button class="feedback-form__button-submit" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">X</span>
+    <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта проезда</h2>
-    <!-- TODO: add interactive map -->
-    <span class="modal-close">X</span>
+    <p>
+      <img src="img/map-big.png" width="940" height="446" alt="Магазин по ул. Большая Конюшенная 19"
+        class="modal-map__map">
+    </p>
+    <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
   </section>
 </body>
 
