@@ -8,8 +8,7 @@
 
 <body>
   <header class="site-header">
-    <!-- TODO: refactor header with forms -->
-    <a href="index.html" class="site-header__logo site-logo">
+    <a href="index.html" class="site-header__logo site-logo" aria-label="На главную">
       <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
     </a>
     <div class="site-header__user-interface">
@@ -79,7 +78,65 @@
     <h1 class="catalog-title">Перфораторы</h1>
     <section class="catalog-filter">
       <h2 class="catalog-filter__title">Фильтр:</h2>
-      <!-- TODO: filter form -->
+      <form class="catalog-filter__filter-form filter-form" action="/filter" method="GET">
+        <h2 class="filter-form__title">Фильтр:</h2>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Цена:</legend>
+          <div class="filter-form__range">
+            <button class="filter-form__handle" type="button" aria-label="Ручка минимума" data-handle="min"></button>
+            <button class="filter-form__handle" type="button" aria-label="Ручка максимума" data-handle="max"></button>
+          </div>
+          <output class="filter-form__output" name="minPrice" aria-label="Минимальная стоимость">0</output>
+          <output class="filter-form__output" name="maxPrice" aria-label="Максимальная стоимость">30000</output>
+        </fieldset>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Производители:</legend>
+          <ul class="filter-form__list">
+            <li class="filter-form__list-item">
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="bosch" checked>
+                Bosch
+              </label>
+            </li>
+            <li class="filter-form__list-item">
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="interskol">
+                Интерскол
+              </label>
+            </li>
+            <li class="filter-form__list-item">
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="makita" checked>
+                Makita
+              </label>
+            </li>
+            <li class="filter-form__list-item">
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="dewalt">
+                Dewalt
+              </label>
+            </li>
+            <li class="filter-form__list-item">
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="hitachi">
+                Hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Питание:</legend>
+          <label class="filter-form__label">
+            <input class="visually-hidden" type="radio" name="powerSource" value="battery" checked>
+            Аккумуляторные
+          </label>
+          <label class="filter-form__label">
+            <input class="visually-hidden" type="radio" name="powerSource" value="grid">
+            Сетевые
+          </label>
+        </fieldset>
+        <button class="filter-form__button" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog-sort">
       <h2 class="catalog-sort__title">Сортировка:</h2>
@@ -94,12 +151,12 @@
           <a href="#" class="sort__link">По функционалу</a>
         </li>
         <li class="sort__item">
-          <a href="#" class="sort__link sort__link--current">
+          <a href="#" class="sort__link sort__link--current" aria-label="По возрастанию">
             <span class="arrow-up"></span>
           </a>
         </li>
         <li class="sort__item">
-          <a href="#" class="sort__link">
+          <a href="#" class="sort__link" aria-label="По убыванию">
             <span class="arrow-down"></span>
           </a>
         </li>
@@ -207,7 +264,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a href="index.html" class="site-footer__logo site-logo">
+    <a href="index.html" class="site-footer__logo site-logo" aria-label="На главную">
       <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
     </a>
     <nav class="site-footer__navigation">
@@ -275,7 +332,7 @@
     <h2 class="modal-add-product__title">Товар добавлен в корзину!</h2>
     <a href="catalog.html" class="modal__link modal__link--red">Оформить заказ</a>
     <a href="#" class="modal__link modal__link--white">Продолжить покупки</a>
-    <span class="modal-close">X</span>
+    <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
   </section>
 </body>
 
