@@ -79,15 +79,14 @@
     <section class="catalog-filter">
       <h2 class="catalog-filter__title">Фильтр:</h2>
       <form class="catalog-filter__filter-form filter-form" action="/filter" method="GET">
-        <h2 class="filter-form__title">Фильтр:</h2>
         <fieldset class="filter-form__fieldset">
           <legend class="filter-form__legend">Цена:</legend>
           <div class="filter-form__range">
             <button class="filter-form__handle" type="button" aria-label="Ручка минимума" data-handle="min"></button>
             <button class="filter-form__handle" type="button" aria-label="Ручка максимума" data-handle="max"></button>
           </div>
-          <output class="filter-form__output" name="minPrice" aria-label="Минимальная стоимость">0</output>
-          <output class="filter-form__output" name="maxPrice" aria-label="Максимальная стоимость">30000</output>
+          <input class="filter-form__input" type="text" name="minPrice" value="0" aria-label="Минимальная стоимость" data-price="min" required>
+          <input class="filter-form__input" type="text" name="maxPrice" value="30000" aria-label="Максимальная стоимость" data-price="max" required>
         </fieldset>
         <fieldset class="filter-form__fieldset">
           <legend class="filter-form__legend">Производители:</legend>
