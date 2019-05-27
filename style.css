@@ -97,16 +97,15 @@ body {
   opacity: 0.3;
 }
 
-.search-form__search-input:hover ~ .search-form__icon-search {
+.search-form__search-input:hover~.search-form__icon-search {
   opacity: 1;
 }
 
-.search-form__search-input:focus ~ .search-form__icon-search,
-.search-form__search-input:active ~ .search-form__icon-search {
+.search-form__search-input:focus~.search-form__icon-search,
+.search-form__search-input:active~.search-form__icon-search {
   opacity: 1;
   fill: #ee3643;
 }
-
 
 .site-header__bookmarks,
 .site-header__basket,
@@ -272,13 +271,87 @@ body {
 }
 
 .cards-list__item {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   box-sizing: border-box;
   width: 300px;
   min-height: 123px;
   margin: 0;
-  padding: 26px 23px;
+  padding: 16px 23px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.cards-list__item--orange {
+  background-color: #ffbf47;
+  background-image: url("img/badge-bucket.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.cards-list__item--blue {
+  background-color: #3bbce3;
+  background-image: url("img/badge-screwdriver.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.cards-list__item--pink {
+  background-color: #dc91d8;
+  background-image: url("img/badge-tractor.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.cards-list__item--green {
+  background-color: #8ed78f;
+  background-image: url("img/badge-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.cards-list__item--yellow {
+  background-color: #ffc047;
+  background-image: url("img/badge-truck.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.cards-list__item--new::after {
+  content: '';
+  position: absolute;
+  top:0;
+  right:0;
+  width: 60px;
+  height: 59px;
+
+  background-image:  url("img/new-flag.png");
+  background-repeat:no-repeat;
+}
+
+.cards-list__name {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.cards-list__description {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  min-height: 38px;
+  margin-left: 2px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -286,26 +359,98 @@ body {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.cards-list__description:hover,
+.cards-list__description:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cards-list__description:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider__slide {
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 266px;
+  padding: 22px 25px 27px 25px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #ffffff;
 
   background-color: #000000;
 }
 
-.cards-list__item--orange {
-  background-color: #ffbf47;
+.slider__slide--drill {
+  background-color: #000000;
+  background-image: url("img/slide-drill.jpg");
+  background-repeat: no-repeat;
 }
 
-.cards-list__item--blue {
-  background-color: #3bbce3;
+.slider__slide--perforator {
+  background-color: #000000;
+  background-image: url("img/slide-perforator.jpg");
+  background-repeat: no-repeat;
 }
 
-.cards-list__item--pink {
-  background-color: #dc91d8;
+.slider__name {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 41px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-.cards-list__item--green {
-  background-color: #8ed78f;
+.slider__link {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  min-height: 38px;
+  padding: 5px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 3px;
+  background-color: #ee3643;
 }
 
-.cards-list__item--yellow {
-  background-color: #ffc047;
+.slider__link:hover,
+.slider__link:focus {
+  background-color: #ca2c37;
+}
+
+.slider__link:active {
+  background-color: #ba2732;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 89px;
+  padding: 20px 24px 20px 30px;
+
+  background-color: #f9f5f0;
 }
