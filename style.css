@@ -328,13 +328,13 @@ body {
 .merchandise__item--new::after {
   content: '';
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   width: 60px;
   height: 59px;
 
-  background-image:  url("img/new-flag.png");
-  background-repeat:no-repeat;
+  background-image: url("img/new-flag.png");
+  background-repeat: no-repeat;
 }
 
 .cards-list__name {
@@ -414,7 +414,8 @@ body {
 }
 
 .slider__link,
-.popular-merchandise__link {
+.popular-merchandise__link,
+.popular-manufacturers__link {
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
@@ -437,11 +438,17 @@ body {
 }
 
 .slider__link:hover,
-.slider__link:focus {
+.slider__link:focus,
+.popular-merchandise__link:hover,
+.popular-merchandise__link:focus,
+.popular-manufacturers__link:hover,
+.popular-manufacturers__link:focus {
   background-color: #ca2c37;
 }
 
-.slider__link:active {
+.slider__link:active,
+.popular-merchandise__link:active,
+.popular-manufacturers__link:active {
   background-color: #ba2732;
 }
 
@@ -457,6 +464,7 @@ body {
   background-color: #f9f5f0;
 }
 
+.popular-manufacturers__title,
 .popular-merchandise__title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -521,6 +529,7 @@ body {
 }
 
 .merchandise__price {
+  position: relative;
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
@@ -538,6 +547,146 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   background-color: #ee3643;
+}
+
+.merchandise__price:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -19px;
+
+  border-color: #ffffff;
+  border-left-color: #ee3643;
+  border-width: 19px;
+  border-style: solid;
+}
+
+.merchandise__buy-link {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  min-height: 38px;
+  padding: 5px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #63a63e;
+  border-radius: 3px;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.merchandise__buy-link:hover,
+.merchandise__buy-link:focus {
+  background-color: #5fbb2d;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.merchandise__buy-link:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.merchandise__bookmark {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  min-height: 38px;
+  padding: 5px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  color: #32425c;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.merchandise__bookmark:hover,
+.merchandise__bookmark:focus {
+  border: solid 3px #32425c;
+}
+
+.merchandise__bookmark:active {
+  border: solid 3px #32425c;
+  opacity: 0.3;
+}
+
+.popular-manufacturers__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular-manufacturers__item {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.popular-manufacturers__item:hover,
+.popular-manufacturers__item:hover {
+  border: none;
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-manufacturers__item:active {
+  border: none;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services__title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services__description,
+.services__slide-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
 }
