@@ -983,6 +983,7 @@ body {
   text-decoration: none;
 
   border: solid 1px #e5e5e5;
+  border-radius: 3px;
   background-color: #ffffff;
 }
 
@@ -1066,6 +1067,29 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-merchandise-pagination {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item .pagination__link {
+  width: 38px;
+}
+
+.pagination__item--next .pagination__link {
+  width: 140px;
+}
+
+.pagination__item--current .pagination__link{
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-color: #ee3643;
 }
 
 .site-footer {
