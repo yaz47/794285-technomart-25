@@ -208,20 +208,20 @@
         <button type="button" class="services__button">Доставка</button>
         <button type="button" class="services__button">Гарантия</button>
         <button type="button" class="services__button">Кредит</button>
-        <div class="services__slide">
+        <div class="services__slide services__slide--delivery">
           <h3 class="services__slide-title">Доставка</h3>
           <p class="services__slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </div>
-        <div class="services__slide">
+        <div class="services__slide services__slide--guarantee">
           <h3 class="services__slide-title">Гарантия</h3>
           <p class="services__slide-description">Если купленный у нас товар поломается или заискрит,
             а также в случае пожара, спровоцированного его возгоранием,
             вы всегда можете быть уверены в нашей гарантии. Мы обменяем
             сгоревший товар на новый. Дом уж восстановите как-нибудь сами</p>
         </div>
-        <div class="services__slide">
+        <div class="services__slide services__slide--credit">
           <h3 class="services__slide-title">Кредит</h3>
           <p class="services__slide-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам
             на помощь.
@@ -252,69 +252,78 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a href="#" class="site-footer__logo site-logo" aria-label="На главную">
-      <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
-    </a>
-    <nav class="site-footer__navigation">
-      <ul class="site-footer__site-navigation-list navigation">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Компания</a>
+    <div class="site-footer__row-one"><a href="#" class="site-footer__logo site-logo" aria-label="На главную">
+        <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
+      </a>
+      <nav class="site-footer__navigation">
+        <ul class="site-footer__site-navigation-list footer-navigation">
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link">Компания</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link">Новости</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="catalog.html" class="footer-navigation__link">Каталог</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link">Доставка</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="site-footer__product-navigation-list footer-navigation">
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link footer-navigation__link--green">Материалы</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link footer-navigation__link--green">Техника</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link footer-navigation__link--green">Инструмент</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#" class="footer-navigation__link footer-navigation__link--green">Спецпредложения</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="site-footer__contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55
+      </p>
+    </div>
+    <div class="site-footer__row-two">
+      <p class="site-footer__copyright">
+        &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
+        Все права защищены
+      </p>
+      <ul class="site-footer__social-list social">
+        <li class="social__item">
+          <a href="#" class="social__button social__button--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Новости</a>
+        <li class="social__item">
+          <a href="#" class="social__button social__button--fb">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a href="catalog.html" class="navigation__link">Каталог</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Контакты</a>
+        <li class="social__item">
+          <a href="#" class="social__button social__button--insta">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
       </ul>
-      <ul class="site-footer__product-navigation-list navigation">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--green">Материалы</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--green">Техника</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--green">Инструмент</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--green">Спецпредложения</a>
-        </li>
-      </ul>
-    </nav>
-    <p class="site-footer__contacts">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-      +7 (812) 555-05-55
-    </p>
-    <p class="site-footer__copyright">
-      &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br>
-      Все права защищены
-    </p>
-    <ul class="site-footer__social-list social">
-      <li class="social__item">
-        <a href="#" class="social__button">Вконтакте</a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__button">Фейсбук</a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__button">Инстаграм</a>
-      </li>
-    </ul>
-    <p class="site-footer__feedback">
-      <span class="site-footer__feedback-text">Обратная связь</span>
-      <a href="#" class="site-footer__feedback-link">mail@htmlacademy.ru</a>
-    </p>
-    <p class="site-footer__developer">
-      <span class="site-footer__developer-text">Разработано -</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="site-footer__developer-link">htmlacademy.ru</a>
-    </p>
+      <p class="site-footer__feedback">
+        <span class="site-footer__feedback-text">Обратная связь</span>
+        <a href="#" class="site-footer__feedback-link">mail@htmlacademy.ru</a>
+      </p>
+      <p class="site-footer__developer">
+        <span class="site-footer__developer-text">Разработано -</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="site-footer__developer-link">htmlacademy.ru</a>
+      </p>
+    </div>
   </footer>
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
