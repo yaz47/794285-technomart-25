@@ -418,7 +418,8 @@ body {
 .popular-manufacturers__link,
 .services__link,
 .description__link,
-.contacts__link {
+.contacts__link,
+.feedback-form__button-submit {
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
@@ -436,6 +437,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 
+  border: none;
   border-radius: 3px;
   background-color: #ee3643;
 }
@@ -451,7 +453,9 @@ body {
 .description__link:hover,
 .description__link:focus,
 .contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus,
+.feedback-form__button-submit:hover,
+.feedback-form__button-submit:focus {
   background-color: #ca2c37;
 }
 
@@ -460,7 +464,8 @@ body {
 .popular-manufacturers__link:active,
 .services__link:active,
 .description__link:active,
-.contacts__link:active {
+.contacts__link:active,
+.feedback-form__button-submit:active {
   background-color: #ba2732;
 }
 
@@ -978,4 +983,98 @@ body {
 .site-footer__developer-link:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+.modal-feedback {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 620px;
+  padding: 50px;
+  min-height: 437px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 19px;
+  text-align: left;
+  color: #000000;
+
+  background-color: #ffffff;
+  border-top: 7px solid #ff5257;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.feedback-form__label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+  text-align: left;
+  color: #000000;
+}
+
+.feedback-form__text-input {
+  border: solid 2px #dee3e4;
+  background-color: #ffffff;
+}
+
+.feedback-form__text-input::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: left;
+  color: #a9a9a9;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.modal-close:before, .modal-close:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -4px;
+  height: 3px;
+  width: 28px;
+  background-color: #ee3643;
+}
+
+.modal-close:before {
+  transform: rotate(45deg);
+}
+.modal-close:after {
+  transform: rotate(-45deg);
+}
+
+.feedback-form__button-submit {
+  width: 460px;
+}
+
+.modal-map {
+  position: relative;
+  box-sizing: border-box;
+  width: 940px;
+  height: 446px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 19px;
+  text-align: left;
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
