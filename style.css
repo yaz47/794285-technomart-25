@@ -831,6 +831,8 @@ body {
   line-height: 18px;
   text-align: left;
   color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .catalog-title {
