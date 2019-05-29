@@ -1,7 +1,6 @@
 .visually-hidden:not(:focus):not(:active),
 .visually-hidden:focus,
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute !important;
 
   width: 1px !important;
@@ -18,10 +17,8 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-  /* temporary styles */
-  width: 1080px;
   margin: 0;
-  padding: 50px;
+  padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -47,8 +44,7 @@ body {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.site-logo:hover,
-.site-logo:focus {
+.site-logo:hover {
   background-color: #ca2c37;
 }
 
@@ -124,9 +120,7 @@ body {
 }
 
 .site-header__bookmarks:hover,
-.site-header__bookmarks:focus,
-.site-header__basket:hover,
-.site-header__basket:focus {
+.site-header__basket:hover {
   background-color: #212a3a;
 }
 
@@ -140,8 +134,7 @@ body {
   background-color: #63a63e;
 }
 
-.site-header__order:hover,
-.site-header__order:focus {
+.site-header__order:hover {
   background-color: #5fbb2d;
 }
 
@@ -205,9 +198,7 @@ body {
 }
 
 .user__login:hover,
-.user__login:focus,
-.user__registry:hover,
-.user__registry:focus {
+.user__registry:hover {
   color: #ee3643;
 }
 
@@ -252,8 +243,7 @@ body {
   background-color: #32425c;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link:hover {
   background-color: #293449;
 }
 
@@ -366,8 +356,7 @@ body {
   border-radius: 3px;
 }
 
-.cards-list__description:hover,
-.cards-list__description:focus {
+.cards-list__description:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -443,19 +432,12 @@ body {
 }
 
 .slider__link:hover,
-.slider__link:focus,
 .popular-merchandise__link:hover,
-.popular-merchandise__link:focus,
 .popular-manufacturers__link:hover,
-.popular-manufacturers__link:focus,
 .services__link:hover,
-.services__link:focus,
 .description__link:hover,
-.description__link:focus,
 .contacts__link:hover,
-.contacts__link:focus,
-.feedback-form__button-submit:hover,
-.feedback-form__button-submit:focus {
+.feedback-form__button-submit:hover {
   background-color: #ca2c37;
 }
 
@@ -605,8 +587,7 @@ body {
   box-shadow: inset 0px -3px 0 0 #367315;
 }
 
-.merchandise__buy-link:hover,
-.merchandise__buy-link:focus {
+.merchandise__buy-link:hover {
   background-color: #5fbb2d;
   box-shadow: inset 0px -3px 0 0 #367315;
 }
@@ -639,8 +620,7 @@ body {
   border: solid 3px #63a63e;
 }
 
-.merchandise__bookmark:hover,
-.merchandise__bookmark:focus {
+.merchandise__bookmark:hover {
   border: solid 3px #32425c;
 }
 
@@ -671,7 +651,6 @@ body {
   border: solid 1px #e5e5e5;
 }
 
-.popular-manufacturers__item:hover,
 .popular-manufacturers__item:hover {
   border: none;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -734,8 +713,7 @@ body {
   border-bottom: 1px solid #293449;
 }
 
-.services__button:hover,
-.services__button:focus {
+.services__button:hover {
   background-color: #293449;
 }
 
@@ -988,9 +966,7 @@ body {
 }
 
 .pagination__link:hover,
-.pagination__link:focus,
-.filter-form__button:hover,
-.filter-form__button:focus {
+.filter-form__button:hover {
   border: solid 1px #bdc6ca;
 }
 
@@ -1046,8 +1022,7 @@ body {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sort__link:hover,
-.sort__link:focus {
+.sort__link:hover {
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
@@ -1168,8 +1143,7 @@ body {
   color: #ffd180;
 }
 
-.footer-navigation__link:hover,
-.footer-navigation__link:focus {
+.footer-navigation__link:hover {
   text-decoration: underline;
 }
 
@@ -1216,7 +1190,6 @@ body {
 }
 
 .social__button:hover,
-.social__button:focus,
 .social__button:active {
   background-color: #ee3643;
 }
@@ -1266,9 +1239,7 @@ body {
 }
 
 .site-footer__feedback-link:hover,
-.site-footer__feedback-link:focus,
-.site-footer__developer-link:hover,
-.site-footer__developer-link:focus {
+.site-footer__developer-link:hover {
   text-decoration: underline;
 }
 
@@ -1440,8 +1411,7 @@ body {
   background-color: #ee3643;
 }
 
-.modal__link--red:hover,
-.modal__link--red:focus {
+.modal__link--red:hover {
   background-color: #ca2c37;
 }
 
@@ -1449,8 +1419,7 @@ body {
   background-color: #ba2732;
 }
 
-.modal__link--white:hover,
-.modal__link--white:focus {
+.modal__link--white:hover {
   opacity: 0.7;
 }
 
