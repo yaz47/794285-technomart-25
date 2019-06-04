@@ -25,7 +25,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.85;
   color: #000000;
 
   background-color: #ffffff;
@@ -65,7 +65,7 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.29;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -533,6 +533,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 auto;
   margin-top: 59px;
   width: 940px;
@@ -628,7 +629,88 @@ body {
 }
 
 .slider {
+  position: relative;
   display: flex;
+  width: 620px;
+  height: 266px;
+}
+
+.slider__arrow-left,
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+
+  border: none;
+  background-color: transparent;
+
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__arrow-left::before,
+.slider__arrow-right::before {
+  content: "";
+
+  position: absolute;
+  top: 25px;
+  left: 31px;
+  width: 30px;
+  height: 30px;
+
+  transform: rotate(-45deg);
+}
+
+.slider__arrow-left:active::before,
+.slider__arrow-right:active::before {
+  transform: rotate(-45deg) scale(0.9);
+}
+
+.slider__arrow-left {
+  left: 0;
+}
+
+.slider__arrow-left::before {
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+}
+
+.slider__arrow-right {
+  right: 0;
+}
+
+.slider__arrow-right::before {
+  left: 25px;
+
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.slider__nav {
+  position: absolute;
+  bottom: 37px;
+  left: 50%;
+  display: flex;
+  margin-left: -5px;
+
+  transform: translateX(-50%);
+}
+
+.slider__dot {
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.slider__dot--active {
+  background-color: #ee3643;
 }
 
 .slider__slide {
