@@ -47,13 +47,7 @@ body {
   overflow: hidden;
 }
 
-.slider__link,
-.popular-merchandise__link,
-.popular-manufacturers__link,
-.services__link,
-.description__link,
-.contacts__link,
-.feedback-form__button-submit {
+.button {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -74,23 +68,11 @@ body {
   background-color: #ee3643;
 }
 
-.slider__link:hover,
-.popular-merchandise__link:hover,
-.popular-manufacturers__link:hover,
-.services__link:hover,
-.description__link:hover,
-.contacts__link:hover,
-.feedback-form__button-submit:hover {
+.button:hover {
   background-color: #ca2c37;
 }
 
-.slider__link:active,
-.popular-merchandise__link:active,
-.popular-manufacturers__link:active,
-.services__link:active,
-.description__link:active,
-.contacts__link:active,
-.feedback-form__button-submit:active {
+.button:active {
   background-color: #ba2732;
 }
 
@@ -761,100 +743,124 @@ body {
   color: #ffffff;
 }
 
-.horizontal-container {
+.popular-merchandise {
+  margin: 0 auto;
+  margin-top: 31px;
+  width: 940px;
+}
+
+.section-title {
   display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  min-height: 89px;
-  padding: 20px 24px 20px 30px;
+  height: 89px;
+  padding-left: 28px;
+  padding-right: 24px;
 
   background-color: #f9f5f0;
 }
 
-.popular-manufacturers__title,
-.popular-merchandise__title {
+.section-title__text {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
-  line-height: 36px;
+  line-height: 1.1;
   color: #32425c;
   text-transform: uppercase;
 }
 
-.popular-merchandise__list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.section-title__button {
+  width: 253px;
 }
 
 .merchandise {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+
   list-style: none;
+}
+
+.popular-merchandise__list {
+  margin-top: 21px;
 }
 
 .merchandise__item {
   position: relative;
   display: flex;
-  flex-flow: column wrap;
-  box-sizing: border-box;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   align-items: center;
   width: 220px;
-  min-height: 318px;
+  height: 318px;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
 }
 
 .merchandise__item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   border: none;
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.merchandise__item:hover > .merchandise__img {
+  visibility: hidden;
+}
+
+
+
 .merchandise__name {
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.11;
   text-align: center;
   color: #000000;
-  text-transform: none;
-  text-decoration: none;
 }
 
 .merchandise__old-price {
+  position: absolute;
+  left: 50%;
+  bottom: 22%;
+  display: inline-block;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 1.06;
   color: #a9a9a9;
   text-transform: uppercase;
   text-decoration: line-through;
+
+  transform: translateX(-50%);
 }
 
 .merchandise__price {
   position: relative;
   display: flex;
-  flex-flow: column wrap;
-  box-sizing: border-box;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 141px;
-  min-height: 38px;
-  padding: 5px;
+  height: 38px;
+  margin-top: 40px;
+  margin-left: 7px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 1.06;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
 
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -862,7 +868,7 @@ body {
 }
 
 .merchandise__price:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -19px;
@@ -874,32 +880,32 @@ body {
 }
 
 .merchandise__buy-link {
-  display: flex;
-  flex-flow: column wrap;
-  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  display: none;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 135px;
-  min-height: 38px;
-  padding: 5px;
+  height: 38px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
 
   background-color: #63a63e;
   border-radius: 3px;
   box-shadow: inset 0px -3px 0 0 #367315;
+  transform: translateX(-50%);
 }
 
 .merchandise__buy-link:hover {
   background-color: #5fbb2d;
-  box-shadow: inset 0px -3px 0 0 #367315;
 }
 
 .merchandise__buy-link:active {
@@ -907,27 +913,48 @@ body {
   box-shadow: none;
 }
 
+.merchandise__buy-link::before {
+  content: "";
+
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+
+  background-image: url("img/icons/icon-cart.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transform: translateY(-50%);
+}
+
+.merchandise__buy-link:hover::before,
+.merchandise__buy-link:active::before {
+  opacity: 1;
+}
+
 .merchandise__bookmark {
-  display: flex;
-  flex-flow: column wrap;
-  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  display: none;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 135px;
-  min-height: 38px;
-  padding: 5px;
+  height: 38px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
   color: #32425c;
   text-transform: uppercase;
-  text-decoration: none;
 
   background-color: #ffffff;
   border: solid 3px #63a63e;
+  transform: translateX(-50%);
 }
 
 .merchandise__bookmark:hover {
@@ -937,6 +964,17 @@ body {
 .merchandise__bookmark:active {
   border: solid 3px #32425c;
   opacity: 0.3;
+}
+
+.merchandise__item:hover > .merchandise__buy-link,
+.merchandise__item:hover > .merchandise__bookmark {
+  display: flex;
+}
+
+.popular-manufacturers {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 940px;
 }
 
 .popular-manufacturers__list {
