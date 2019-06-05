@@ -982,18 +982,19 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   list-style: none;
 }
 
 .popular-manufacturers__item {
   display: flex;
-  flex-flow: column wrap;
-  box-sizing: border-box;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 220px;
   height: 145px;
+  margin-bottom: 20px;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
