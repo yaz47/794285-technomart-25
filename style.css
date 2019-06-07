@@ -544,26 +544,31 @@ body {
 .card--orange {
   background-color: #ffbf47;
   background-image: url("img/badge-bucket.svg");
+  background-position: 83% 52%;
 }
 
 .card--blue {
   background-color: #3bbce3;
   background-image: url("img/badge-screwdriver.svg");
+  background-position: 88% 52%;
 }
 
 .card--pink {
   background-color: #dc91d8;
   background-image: url("img/badge-tractor.svg");
+  background-position: 86% 50%;
 }
 
 .card--green {
   background-color: #8ed78f;
   background-image: url("img/badge-cart.svg");
+  background-position: 81% 49%;
 }
 
 .card--yellow {
   background-color: #ffc047;
   background-image: url("img/badge-truck.svg");
+  background-position: 86% 51%;
 }
 
 .card--new::after,
@@ -1587,7 +1592,7 @@ body {
   align-items: center;
   width: 940px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 .site-footer__logo {
@@ -1942,4 +1947,8 @@ body {
   line-height: 37px;
   text-align: center;
   color: #000000;
+}
+
+.modal {
+  display: none;
 }
