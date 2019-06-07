@@ -224,6 +224,12 @@ body {
   opacity: 0.5;
 }
 
+.site-header__basket--active,
+.site-header__basket--active:hover,
+.site-header__basket--active:active {
+  background-color: #ee3643;
+}
+
 .site-header__order {
   background-color: #63a63e;
 }
@@ -807,7 +813,7 @@ body {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.merchandise__item:hover > .merchandise__img {
+.merchandise__item:hover>.merchandise__img {
   visibility: hidden;
 }
 
@@ -901,7 +907,7 @@ body {
 
   background-color: #63a63e;
   border-radius: 3px;
-  box-shadow: inset 0px -3px 0 0 #367315;
+  box-shadow: inset 0px -3px 0 0 #367316;
   transform: translateX(-50%);
 }
 
@@ -937,7 +943,7 @@ body {
 .merchandise__bookmark {
   position: absolute;
   top: 30%;
-  left:50%;
+  left: 50%;
   display: none;
   flex-flow: column nowrap;
   justify-content: center;
@@ -967,8 +973,8 @@ body {
   opacity: 0.3;
 }
 
-.merchandise__item:hover > .merchandise__buy-link,
-.merchandise__item:hover > .merchandise__bookmark {
+.merchandise__item:hover>.merchandise__buy-link,
+.merchandise__item:hover>.merchandise__bookmark {
   display: flex;
 }
 
@@ -1028,6 +1034,9 @@ body {
 .services__title,
 .description__title,
 .contacts__title {
+  margin: 0;
+  padding: 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -1041,6 +1050,9 @@ body {
 .services__slide-description,
 .description__text,
 .contacts__text {
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -1051,13 +1063,14 @@ body {
 }
 
 .services__title {
-  margin-top: 65px;
+  margin-top: 64px;
 }
 
 .services__description {
   display: inline-block;
   margin: 0;
   padding: 0;
+  margin-top: 25px;
   margin-right: 530px;
 }
 
@@ -1081,7 +1094,7 @@ body {
 }
 
 .services__button-container {
-  margin-top: 67px;
+  margin-top: 68px;
 }
 
 .services__button {
@@ -1176,33 +1189,61 @@ body {
   margin-top: 30px;
 }
 
+.two-columns {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.description {
+  width: 640px;
+  margin-top: 50px;
+  margin-bottom: 66px;
+  padding-right: 120px;
+}
+
 .description,
 .contacts {
+  color: #000000;
+
   background-color: #ffffff;
 }
 
+.description__title {
+  margin-top: 29px;
+}
+
+.description__text {
+  margin-top: 24px;
+}
+
 .description__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .description__item {
   position: relative;
+  margin-top: 21px;
+  margin-left: 36px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 23px;
+  line-height: 1.11;
   text-align: left;
   color: #000000;
 }
 
 .description__item:before {
-  content: '';
+  content: "";
+
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: -36px;
-  display: block;
-  box-sizing: border-box;
   width: 25px;
   height: 2px;
 
@@ -1211,10 +1252,31 @@ body {
 
 .description__link {
   width: 220px;
+  margin-top: 37px;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 66px;
+}
+
+.contacts__title {
+  margin-top: 29px;
+}
+
+.contacts__text {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 80px;
+  margin-bottom: 30px;
 }
 
 .contacts__link {
   width: 300px;
+  margin-top: 33px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -1229,17 +1291,15 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.38;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .catalog-title {
   display: flex;
   flex-flow: column wrap;
-  box-sizing: border-box;
   align-content: flex-start;
   justify-content: center;
   min-height: 89px;
@@ -1248,7 +1308,7 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
-  line-height: 30px;
+  line-height: 1.1;
   text-align: left;
   color: #32425c;
   text-transform: uppercase;
@@ -1259,7 +1319,6 @@ body {
 .catalog-filter {
   display: flex;
   flex-flow: column nowrap;
-  box-sizing: border-box;
   width: 220px;
 }
 
@@ -1274,7 +1333,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.38;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
@@ -1306,7 +1365,6 @@ body {
 
 .filter-form__handle {
   display: block;
-  box-sizing: border-box;
   width: 20px;
   height: 20px;
   margin: 0;
@@ -1319,7 +1377,6 @@ body {
 
 .filter-form__input {
   display: block;
-  box-sizing: border-box;
   width: 95px;
   height: 38px;
   margin: 0;
@@ -1362,7 +1419,6 @@ body {
 .filter-form__button {
   display: flex;
   flex-flow: column nowrap;
-  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -1377,7 +1433,6 @@ body {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 
   border: solid 1px #e5e5e5;
   border-radius: 3px;
@@ -1397,7 +1452,6 @@ body {
 .catalog-sort {
   display: flex;
   flex-flow: row wrap;
-  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   width: 700px;
@@ -1518,32 +1572,39 @@ body {
 .site-footer__row-one {
   display: flex;
   flex-flow: row wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
-  background-color: #32425c;
+.site-footer__row-two-color {
+  background-color: #293449;
 }
 
 .site-footer__row-two {
   display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 
-  background-color: #293449;
+.site-footer__logo {
+  width: 220px;
+  height: 68px;
 }
 
 .footer-navigation {
   display: flex;
   flex-flow: row wrap;
-  box-sizing: border-box;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .footer-navigation__item {
   display: flex;
-  box-sizing: border-box;
   justify-content: center;
   align-items: center;
 }
@@ -1552,10 +1613,9 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.33;
   text-align: center;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .footer-navigation__link--green {
@@ -1570,20 +1630,43 @@ body {
   opacity: 0.5;
 }
 
+.site-footer__site-navigation-list {
+  flex-grow: 1;
+  margin-top: 31px;
+  margin-left: 173px;
+}
+
+.site-footer__product-navigation-list {
+  flex-grow: 1;
+  margin-top: 5px;
+  margin-left: 91px;
+}
+
 .site-footer__contacts {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  margin-left: 3px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.33;
   text-align: left;
   color: #ffffff;
 }
 
 .site-footer__copyright {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.13;
   text-align: left;
   color: #ffffff;
 }
@@ -1593,6 +1676,8 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
+  margin-top: 35px;
+  margin-left: 165px;
   padding: 0;
   min-width: 132px;
   list-style: none;
@@ -1600,12 +1685,13 @@ body {
 
 .social__button {
   display: block;
-  box-sizing: border-box;
   width: 42px;
   height: 42px;
 
   background-color: #212a3a;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social__button:hover,
@@ -1615,35 +1701,39 @@ body {
 
 .social__button--vk {
   background-image: url("img/icons/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social__button--fb {
   background-image: url("img/icons/icon-fb.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social__button--insta {
   background-image: url("img/icons/icon-insta.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .site-footer__feedback,
 .site-footer__developer {
   display: flex;
   flex-flow: column wrap;
-  box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.13;
   text-align: left;
   color: #ffffff;
+}
+
+.site-footer__feedback {
+  margin-top: 36px;
+  margin-left: 119px;
+}
+
+.site-footer__developer {
+  margin-top: 36px;
+  margin-left: 53px;
 }
 
 .site-footer__feedback-link,
@@ -1651,10 +1741,9 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.13;
   text-align: left;
   color: #ffd180;
-  text-decoration: none;
 }
 
 .site-footer__feedback-link:hover,
