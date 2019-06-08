@@ -487,21 +487,16 @@ body {
 
 .navigation__item {
   display: flex;
-  flex-grow: 1;
-  min-height: 55px;
 }
 
 .navigation__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  margin: 19px 9px 17px 52px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
   line-height: 1.1;
+  text-align: center;
   color: #ffffff;
 
   background-color: #32425c;
