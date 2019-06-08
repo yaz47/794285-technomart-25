@@ -124,7 +124,7 @@ body {
 
 .site-header__search-form {
   width: 270px;
-  height: 42px;
+  min-height: 42px;
 }
 
 .search-form {
@@ -337,7 +337,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 270px;
-  height: 45px;
+  min-height: 45px;
   margin: 0;
   margin-top: 5px;
   margin-right: 25px;
@@ -488,7 +488,7 @@ body {
 .navigation__item {
   display: flex;
   flex-grow: 1;
-  height: 55px;
+  min-height: 55px;
 }
 
 .navigation__link {
@@ -529,12 +529,14 @@ body {
 
 .card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-flow: column nowrap;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-left: 23px;
+  padding-right: 5px;
 
   background-color: #000000;
   background-repeat: no-repeat;
@@ -625,7 +627,7 @@ body {
   position: relative;
   display: flex;
   width: 620px;
-  height: 266px;
+  min-height: 266px;
   overflow: hidden;
 }
 
@@ -712,8 +714,8 @@ body {
   display: none;
   flex-shrink: 0;
   width: 620px;
-  height: 266px;
-  padding: 20px 25px 25px 25px;
+  min-height: 266px;
+  padding: 20px 25px 20px 25px;
 
   color: #ffffff;
 
@@ -766,7 +768,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 89px;
+  min-height: 89px;
+  padding: 5px;
   padding-left: 28px;
   padding-right: 24px;
 
@@ -774,6 +777,11 @@ body {
 }
 
 .section-title__text {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -807,7 +815,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 220px;
-  height: 318px;
+  min-height: 318px;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
@@ -862,7 +870,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 141px;
-  height: 38px;
+  min-height: 38px;
   margin-top: 40px;
   margin-left: 7px;
 
@@ -900,7 +908,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -954,7 +962,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -1005,7 +1013,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 145px;
+  min-height: 145px;
   margin-bottom: 20px;
 
   background-color: #ffffff;
@@ -1083,7 +1091,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  height: 352px;
+  min-height: 352px;
   overflow: hidden;
 }
 
@@ -1107,7 +1115,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   width: 240px;
-  height: 62px;
+  min-height: 62px;
   padding-left: 23px;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -1146,7 +1154,7 @@ body {
   display: none;
   flex-shrink: 0;
   width: 700px;
-  height: 352px;
+  min-height: 352px;
   padding-top: 65px;
   padding-right: 342px;
   padding-left: 80px;
