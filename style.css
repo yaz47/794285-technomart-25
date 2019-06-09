@@ -1511,10 +1511,13 @@ body {
   margin-top: 12px;
   margin-bottom: 17px;
   padding: 0;
-  padding-bottom: 24px;
 
   border: none;
   border-bottom: 1px solid #f7f3ec;
+}
+
+.filter-form__fieldset:last-of-type {
+  border: none;
 }
 
 .filter-form__legend {
@@ -1577,6 +1580,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .filter-form__input-wrapper::before {
@@ -1614,22 +1618,96 @@ body {
 .filter-form__list {
   margin: 0;
   padding: 0;
-  padding-left: 35px;
+  padding-top: 13px;
+  padding-bottom: 4px;
+  padding-left: 34px;
+
   list-style: none;
 }
 
 .filter-form__list-item {
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 }
 
 .filter-form__label {
+  position: relative;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 1.33;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filter-form__checkbox + .filter-form__label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  width: 23px;
+  height: 23px;
+
+  opacity: 0.7;
+  border: 2px solid #b5b5b5;
+  border-radius: 3px;
+}
+
+.filter-form__checkbox:checked + .filter-form__label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  width: 27px;
+  height: 23px;
+
+  opacity: 0.7;
+  border: none;
+  background-image: url("img/icons/icon-checkboxon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-form__radio + .filter-form__label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  width: 25px;
+  height: 25px;
+
+  opacity: 0.7;
+  border: 4px solid #b5b5b5;
+  border-radius: 50%;
+}
+
+.filter-form__radio:checked + .filter-form__label::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -26px;
+  width: 9px;
+  height: 9px;
+
+  opacity: 0.7;
+  background-color: #b5b5b5;
+  border-radius: 50%;
+}
+
+.filter-form__label:hover::before,
+.filter-form__checkbox:checked + .filter-form__label:hover::before,
+.filter-form__radio:checked + .filter-form__label:hover::after {
+  opacity: 1;
+}
+
+.filter-form__checkbox:disabled + .filter-form__label::before,
+.filter-form__checkbox:disabled + .filter-form__label,
+.filter-form__radio:disabled + .filter-form__label::before,
+.filter-form__radio:disabled + .filter-form__label::after,
+.filter-form__radio:disabled + .filter-form__label {
+  opacity: 0.3;
 }
 
 .pagination__link,
@@ -1646,7 +1724,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.38;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -1654,6 +1732,10 @@ body {
   border: solid 1px #e5e5e5;
   border-radius: 3px;
   background-color: #ffffff;
+}
+
+.filter-form__button {
+  margin-top: 55px;
 }
 
 .pagination__link:hover,

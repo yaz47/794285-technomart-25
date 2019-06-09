@@ -106,7 +106,7 @@
               <div class="filter-form__input-wrapper">
                 <input class="filter-form__input" type="text" name="minPrice" value="0"
                   aria-label="Минимальная стоимость" data-price="min" required>
-                <input class="filter-form__input filter-form__input-right" type="text" name="maxPrice" value="30000"
+                <input class="filter-form__input" type="text" name="maxPrice" value="30000"
                   aria-label="Максимальная стоимость" data-price="max" required>
               </div>
             </fieldset>
@@ -114,32 +114,32 @@
               <legend class="filter-form__legend">Производители:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="checkbox" name="bosch" checked>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
+                  <label class="filter-form__label" for="bosch">
                     Bosch
                   </label>
                 </li>
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="checkbox" name="interskol">
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" name="interskol" id="interskol">
+                  <label class="filter-form__label" for="interskol">
                     Интерскол
                   </label>
                 </li>
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="checkbox" name="makita" checked>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" name="makita" id="makita" checked>
+                  <label class="filter-form__label" for="makita">
                     Makita
                   </label>
                 </li>
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="checkbox" name="dewalt">
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" name="dewalt" id="dewalt">
+                  <label class="filter-form__label" for="dewalt">
                     Dewalt
                   </label>
                 </li>
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="checkbox" name="hitachi">
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" name="hitachi" id="hitachi">
+                  <label class="filter-form__label" for="hitachi">
                     Hitachi
                   </label>
                 </li>
@@ -149,14 +149,14 @@
               <legend class="filter-form__legend">Питание:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="radio" name="powerSource" value="battery" checked>
+                  <input class="filter-form__radio visually-hidden" type="radio" name="powerSource" value="battery" id="battery" checked>
+                  <label class="filter-form__label" for="battery">
                     Аккумуляторные
                   </label>
                 </li>
                 <li class="filter-form__list-item">
-                  <label class="filter-form__label">
-                    <input class="visually-hidden" type="radio" name="powerSource" value="grid">
+                  <input class="filter-form__radio visually-hidden" type="radio" name="powerSource" value="grid" id="grid">
+                  <label class="filter-form__label" for="grid">
                     Сетевые
                   </label>
                 </li>
