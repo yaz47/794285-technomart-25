@@ -874,8 +874,8 @@ body {
 .merchandise {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   margin: 0;
+  margin-left: -20px;
   padding: 0;
 
   list-style: none;
@@ -890,6 +890,7 @@ body {
   width: 220px;
   min-height: 318px;
   margin-top: 20px;
+  margin-left: 20px;
 
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
@@ -1366,9 +1367,14 @@ body {
   margin-bottom: 20px;
 }
 
-.catalog {
+.catalog-container {
   width: 940px;
   margin: 0 auto;
+}
+
+.catalog__two-columns {
+  display: flex;
+  margin-top: 20px;
 }
 
 .breadcrumbs {
@@ -1438,7 +1444,7 @@ body {
 }
 
 .catalog-title {
-display: block;
+  display: block;
   min-height: 89px;
   margin: 0;
   padding: 0;
@@ -1458,7 +1464,10 @@ display: block;
 .catalog-filter {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 220px;
+  margin-right: 20px;
 }
 
 .catalog-filter__title {
@@ -1645,15 +1654,6 @@ display: block;
   opacity: 1;
   border-bottom: none;
   text-decoration: none;
-}
-
-.catalog-merchandise__list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .catalog-merchandise-pagination {
