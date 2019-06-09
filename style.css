@@ -1892,21 +1892,36 @@ body {
   background-color: #f4f7f9;
 }
 
+.catalog-product-description__container {
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 68px;
+  width: 940px;
+}
+
 .catalog-product-description__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: normal;
-  line-height: 35px;
+  line-height: 1.1;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
 }
 
 .catalog-product-description__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 1.85;
   text-align: left;
   color: #000000;
 }
