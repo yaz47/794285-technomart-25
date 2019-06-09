@@ -575,7 +575,10 @@ body {
 }
 
 .navigation__link {
-  margin: 0 29px 0 32px;
+  display: inline-block;
+  margin: 0 9px 0 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
