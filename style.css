@@ -992,7 +992,7 @@ body {
 
 .merchandise__buy-link {
   position: absolute;
-  top: 15%;
+  top: 14%;
   left: 50%;
   display: none;
   flex-flow: column nowrap;
@@ -1046,7 +1046,7 @@ body {
 
 .merchandise__bookmark {
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   display: none;
   flex-flow: column nowrap;
