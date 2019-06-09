@@ -561,6 +561,8 @@ body {
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 10px;
   width: 100%;
 
   list-style: none;
@@ -573,19 +575,20 @@ body {
 }
 
 .navigation__link {
-  margin: 19px 9px 17px 52px;
+  margin: 0 29px 0 32px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
-  line-height: 1.1;
+  line-height: 3.27;
   text-align: center;
   color: #ffffff;
 
   background-color: #32425c;
 }
 
-.navigation__link:hover {
+.navigation__item:hover,
+.navigation__item:hover > .navigation__link {
   background-color: #293449;
 }
 
