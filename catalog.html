@@ -95,15 +95,20 @@
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Цена:</legend>
               <div class="filter-form__range">
-                <button class="filter-form__handle" type="button" aria-label="Ручка минимума"
-                  data-handle="min"></button>
-                <button class="filter-form__handle" type="button" aria-label="Ручка максимума"
-                  data-handle="max"></button>
+                <div class="filter-form__amount-bar">
+                  <div class="filter-form__amount-bar-fill"></div>
+                  <button class="filter-form__handle" type="button" aria-label="Ручка минимума"
+                    data-handle="min"></button>
+                  <button class="filter-form__handle" type="button" aria-label="Ручка максимума"
+                    data-handle="max"></button>
+                </div>
               </div>
-              <input class="filter-form__input" type="text" name="minPrice" value="0" aria-label="Минимальная стоимость"
-                data-price="min" required>
-              <input class="filter-form__input" type="text" name="maxPrice" value="30000"
-                aria-label="Максимальная стоимость" data-price="max" required>
+              <div class="filter-form__input-wrapper">
+                <input class="filter-form__input" type="text" name="minPrice" value="0"
+                  aria-label="Минимальная стоимость" data-price="min" required>
+                <input class="filter-form__input filter-form__input-right" type="text" name="maxPrice" value="30000"
+                  aria-label="Максимальная стоимость" data-price="max" required>
+              </div>
             </fieldset>
             <fieldset class="filter-form__fieldset">
               <legend class="filter-form__legend">Производители:</legend>
