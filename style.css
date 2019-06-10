@@ -1420,6 +1420,25 @@ body {
   background-position: 0 0;
 }
 
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item::before {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: -5px;
+
+  width: 10px;
+  height: 10px;
+
+  border-right: 2px solid #e0e2e6;
+  border-bottom: 2px solid #e0e2e6;
+  transform: rotate(-45deg);
+}
+
 .breadcrumbs__link {
   position: relative;
   display: inline-block;
@@ -1438,27 +1457,12 @@ body {
   text-transform: uppercase;
 }
 
-.breadcrumbs__link:hover {
+.breadcrumbs__link:hover:not(.breadcrumbs__link--current) {
   text-decoration: underline;
 }
 
-.breadcrumbs__link:active {
+.breadcrumbs__link:active:not(.breadcrumbs__link--current) {
   opacity: 0.5;
-}
-
-.breadcrumbs__link::before {
-  content: "";
-
-  position: absolute;
-  top: 3px;
-  left: -28px;
-
-  width: 10px;
-  height: 10px;
-
-  border-right: 2px solid #e0e2e6;
-  border-bottom: 2px solid #e0e2e6;
-  transform: rotate(-45deg);
 }
 
 .catalog-title {
