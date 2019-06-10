@@ -522,7 +522,7 @@ body {
 }
 
 .user__link:active {
-  opacity: 0.3;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .user__link-acc {
