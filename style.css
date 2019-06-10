@@ -467,13 +467,11 @@ body {
   justify-content: flex-start;
 }
 
-.user__name::before {
-  content: "";
-
+.user__name-profile {
   position: absolute;
   top: 13px;
   left: 13px;
-
+  display: block;
   width: 20px;
   height: 18px;
 
@@ -483,13 +481,11 @@ body {
   opacity: 0.3;
 }
 
-.user__name::after {
-  content: "";
-
+.user__name-logout {
   position: absolute;
   top: 14px;
   right: 11px;
-
+  display: block;
   width: 20px;
   height: 17px;
 
@@ -499,13 +495,13 @@ body {
   opacity: 0.3;
 }
 
-.user__name:hover::before,
-.user__name:hover::after {
+.user__name-profile:hover,
+.user__name-logout:hover {
   opacity: 1;
 }
 
-.user__name:active::before,
-.user__name:active::after {
+.user__name-profile:active,
+.user__name-logout:active {
   opacity: 0.5;
 }
 
