@@ -48,18 +48,16 @@ body {
 }
 
 .button {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 195px;
   min-height: 38px;
-  padding: 5px;
+  padding: 10px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.29;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -689,18 +687,18 @@ body {
 }
 
 .card__description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 135px;
   min-height: 38px;
   margin-top: 13px;
+  padding: 10px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.29;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: rgba(0, 0, 0, 0.1);
@@ -999,11 +997,9 @@ body {
   top: 14%;
   left: 50%;
   display: none;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   width: 135px;
   min-height: 38px;
+  padding: 10px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -1053,9 +1049,6 @@ body {
   top: 28%;
   left: 50%;
   display: none;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   width: 135px;
   min-height: 38px;
 
@@ -1083,7 +1076,7 @@ body {
 
 .merchandise__item:hover>.merchandise__buy-link,
 .merchandise__item:hover>.merchandise__bookmark {
-  display: flex;
+  display: block;
 }
 
 .popular-manufacturers {
@@ -1207,9 +1200,7 @@ body {
 }
 
 .services__button {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  display: block;
   width: 240px;
   min-height: 62px;
   padding-left: 23px;
@@ -1727,12 +1718,9 @@ body {
 
 .pagination__link,
 .filter-form__button {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin: 0;
-  padding: 5px;
+  padding: 9px;
   width: 140px;
   min-height: 38px;
 
