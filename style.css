@@ -1674,6 +1674,12 @@ body {
   background-position: 0 0;
 }
 
+.filter-form__radio:focus+.filter-form__label::before,
+.filter-form__checkbox:focus+.filter-form__label::before {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-form__radio+.filter-form__label::before {
   content: "";
 
