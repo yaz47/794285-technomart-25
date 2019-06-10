@@ -550,6 +550,8 @@ body {
 
   background-color: #32425c;
   border-radius: 50%;
+
+  pointer-events: none;
 }
 
 .site-header__navigation {
