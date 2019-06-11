@@ -620,9 +620,7 @@ body {
   min-height: 123px;
   margin-bottom: 20px;
   margin-left: 20px;
-  padding-top: 20px;
-  padding-left: 23px;
-  padding-right: 5px;
+  padding: 20px 120px 8px 23px;
 
   background-color: #000000;
   background-repeat: no-repeat;
