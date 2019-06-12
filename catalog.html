@@ -15,7 +15,8 @@
     <div class="site-header__top-row">
       <div class="site-header__top-container">
         <a href="index.html" class="site-header__logo site-logo" aria-label="На главную">
-          <img src="img/icons/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
+          <img src="img/icons/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19"
+            class="site-logo__img">
         </a>
         <form class="site-header__search-form search-form" action="https://echo.htmlacademy.ru" method="POST">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -388,11 +389,18 @@
     </div>
   </footer>
   <div class="modal modal--add-product modal--hide">
-    <section class="modal-add-product">
-      <h2 class="modal-add-product__title">Товар добавлен в корзину!</h2>
+    <section class="modal-add-product modal-block">
+      <div class="modal-add-product__container">
+        <h2 class="modal-add-product__title">Товар добавлен в корзину!</h2>
+      </div>
       <div class="modal-add-product__bottom-row">
-        <a href="catalog.html" class="modal-add-product__link modal-add-product__link--order button">Оформить заказ</a>
-        <a href="#" class="modal-add-product__link modal-add-product__link--white modal-add-product__link--shop button">Продолжить покупки</a>
+        <div class="modal-add-product__container">
+          <a href="catalog.html" class="modal-add-product__link modal-add-product__link--order button">Оформить
+            заказ</a>
+          <a href="#"
+            class="modal-add-product__link modal-add-product__link--white modal-add-product__link--shop button">Продолжить
+            покупки</a>
+        </div>
       </div>
       <button class="modal-close" type="button" aria-label="Закрыть форму покупки"></button>
     </section>
