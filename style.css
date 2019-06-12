@@ -589,7 +589,7 @@ body {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.navigation__item:first-child>.navigation__link{
+.navigation__item:first-child>.navigation__link {
   padding-left: 52px;
 }
 
@@ -2172,47 +2172,77 @@ body {
 }
 
 .modal-feedback {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
+  position: fixed;
+  top: 337px;
+  left: 50%;
   width: 620px;
-  padding: 50px;
-  min-height: 437px;
+  min-height: 430px;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
-  line-height: 19px;
+  line-height: 1.38;
   text-align: left;
   color: #000000;
 
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  transform: translateX(-50%);
+}
+
+.feedback-form {
+  margin-top: 25px;
+}
+
+.feedback-form__container {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.feedback-form__bottom-row {
+  background-color: #f4f4f4;
+}
+
+.feedback-form__two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-form__column {
+  width: 220px;
 }
 
 .feedback-form__label {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 23px;
+  line-height: 1.1;
   text-align: left;
   color: #000000;
 }
 
 .feedback-form__text-input {
-  border: solid 2px #dee3e4;
-  background-color: #ffffff;
-}
+  width: 100%;
+  min-height: 38px;
+  padding: 5px 10px 5px 13px;
 
-.feedback-form__text-input::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 1.38;
   text-align: left;
+  color:  #000000;
+
+  background-color: #ffffff;
+  border: solid 2px #dee3e4;
+  border-radius: 3px;
+}
+
+.feedback-form__text-input::placeholder {
   color: #a9a9a9;
 }
 
@@ -2224,6 +2254,16 @@ body {
   border: solid 2px #ee3643;
 }
 
+.feedback-form__textarea {
+  margin-bottom: 30px;
+}
+
+.feedback-form__button-submit {
+  width: 100%;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+
 .modal-close {
   position: absolute;
   top: 9px;
@@ -2233,6 +2273,8 @@ body {
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .modal-close:before,
@@ -2359,5 +2401,15 @@ body {
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: transparent;
+}
+
+.modal--hide {
   display: none;
 }

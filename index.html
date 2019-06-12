@@ -226,14 +226,16 @@
           </div>
           <div class="services__slide services__slide--delivery services__slide--active">
             <h3 class="services__slide-title">Доставка</h3>
-            <p class="services__slide-description services__slide-description--tight">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
+            <p class="services__slide-description services__slide-description--tight">Мы с удовольствием доставим ваш
+              товар прямо<br>к вашему подъезду
               совершенно бесплатно!
               Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
           </div>
           <div class="services__slide services__slide--guarantee">
             <h3 class="services__slide-title">Гарантия</h3>
             <p class="services__slide-description">Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его возгоранием, вы&nbsp;всегда можете быть уверены в нашей гарантии. Мы обменяем
+              а также в случае пожара, спровоцированного его возгоранием, вы&nbsp;всегда можете быть уверены в нашей
+              гарантии. Мы обменяем
               сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами</p>
           </div>
           <div class="services__slide services__slide--credit">
@@ -253,7 +255,8 @@
         <p class="description__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор
           товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на
           гастарбайтерах.</p>
-        <p class="description__text description__text--tight">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со
+        <p class="description__text description__text--tight">Мы можем доставить ваш товар в самые отдаленные точки
+          России! Техномарт работает со
           многими транспортными компаниями:</p>
         <ul class="description__list">
           <li class="description__item">Деловые линии</li>
@@ -346,30 +349,46 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-feedback">
-    <h2 class="visually-hidden">Обратная связь</h2>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <label class="feedback-form__label" for="feedbackName">Ваше имя:</label>
-      <input class="feedback-form__text-input" type="text" name="name" id="feedbackName" placeholder="Имя Фамилия"
-        required>
-      <label class="feedback-form__label" for="feedbackMail">Ваш e-mail:</label>
-      <input class="feedback-form__text-input" type="email" name="email" id="feedbackMail"
-        placeholder="email@example.com" required>
-      <label class="feedback-form__label" for="feedbackText">Текст письма:</label>
-      <textarea class="feedback-form__text-input" id="feedbackText" name="text" placeholder="В свободной форме" rows="5"
-        required></textarea>
-      <button class="feedback-form__button-submit" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
-  </section>
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Карта проезда</h2>
-    <p>
-      <img src="img/map-big.png" width="940" height="446" alt="Магазин по ул. Большая Конюшенная 19"
-        class="modal-map__map">
-    </p>
-    <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
-  </section>
+  <div class="modal modal--feedback modal--hide">
+    <section class="modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="feedback-form__container">
+          <div class="feedback-form__two-columns">
+            <div class="feedback-form__column">
+              <label class="feedback-form__label" for="feedbackName">Ваше имя:</label>
+              <input class="feedback-form__text-input" type="text" name="name" id="feedbackName"
+                placeholder="Имя Фамилия" required>
+            </div>
+            <div class="feedback-form__column">
+              <label class="feedback-form__label" for="feedbackMail">Ваш e-mail:</label>
+              <input class="feedback-form__text-input" type="email" name="email" id="feedbackMail"
+                placeholder="email@example.com" required>
+            </div>
+          </div>
+          <label class="feedback-form__label" for="feedbackText">Текст письма:</label>
+          <textarea class="feedback-form__text-input feedback-form__textarea" id="feedbackText" name="text"
+            placeholder="В свободной форме" rows="6" required></textarea>
+        </div>
+        <div class="feedback-form__bottom-row">
+          <div class="feedback-form__container">
+            <button class="feedback-form__button-submit button" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+    </section>
+  </div>
+  <div class="modal modal--map modal--hide">
+    <section class="modal-map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <p>
+        <img src="img/map-big.png" width="940" height="446" alt="Магазин по ул. Большая Конюшенная 19"
+          class="modal-map__map">
+      </p>
+      <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
+    </section>
+  </div>
   <script src="/js/index.js"></script>
 </body>
 

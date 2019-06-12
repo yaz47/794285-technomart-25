@@ -1,12 +1,36 @@
 'use strict';
 
+let contactsLink = document.querySelector('.contacts__link');
+
 let slider = document.querySelector('.slider');
 let merchList = document.querySelector('.merchandise');
 let buyElem = document.querySelector('.site-header__basket');
-let buyCountElem = document.querySelector('.site-header__basket-count');
+let buyCountElem = buyElem.querySelector('.site-header__basket-count');
 let bookmarksElem = document.querySelector('.site-header__bookmarks');
-let bookmarksCountElem = document.querySelector('.site-header__bookmarks-count');
+let bookmarksCountElem = bookmarksElem.querySelector('.site-header__bookmarks-count');
 let servicesSlider = document.querySelector('.services__slider');
+
+document.addEventListener('keyup', e => {
+  if (e.code === 'Escape') {
+    document.querySelectorAll('.modal')
+      .forEach(elem => elem.classList.add('modal--hide'));
+  }
+});
+
+document.addEventListener('click', e => {
+  if (e.target.matches('.modal') ||
+    e.target.matches('.modal-close')) {
+    e.target.closest('.modal').classList.add('modal--hide');
+  }
+});
+
+if (contactsLink) {
+  contactsLink.addEventListener('click', e => {
+    document.querySelector('.modal--feedback').classList
+    .remove('modal--hide');
+    e.preventDefault();
+  });
+}
 
 if (slider) {
   slider.addEventListener('click', e => {
@@ -21,7 +45,8 @@ if (slider) {
   });
 }
 
-if (merchList) {
+if (merchList && buyElem && buyCountElem &&
+  bookmarksElem && bookmarksCountElem) {
   merchList.addEventListener('click', e => {
     if (e.target.closest('.merchandise__buy-link')) {
       buyElem.classList.add('site-header__basket--active');
@@ -45,15 +70,15 @@ if (servicesSlider) {
     if (e.target.closest('.services__button') &&
       !e.target.closest('.services__button').classList
       .contains('services__button--active')) {
-        servicesSlides[activeSlideIndex].classList
+      servicesSlides[activeSlideIndex].classList
         .remove('services__slide--active');
-        servicesButtons[activeSlideIndex].classList
+      servicesButtons[activeSlideIndex].classList
         .remove('services__button--active');
-        activeSlideIndex = servicesButtons
+      activeSlideIndex = servicesButtons
         .indexOf(e.target.closest('.services__button'));
-        servicesSlides[activeSlideIndex].classList
+      servicesSlides[activeSlideIndex].classList
         .add('services__slide--active');
-        servicesButtons[activeSlideIndex].classList
+      servicesButtons[activeSlideIndex].classList
         .add('services__button--active');
     }
   });
