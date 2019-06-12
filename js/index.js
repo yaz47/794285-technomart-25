@@ -1,7 +1,6 @@
 'use strict';
 
-let contactsLink = document.querySelector('.contacts__link');
-
+let contacts = document.querySelector('.contacts');
 let slider = document.querySelector('.slider');
 let merchList = document.querySelector('.merchandise');
 let buyElem = document.querySelector('.site-header__basket');
@@ -24,11 +23,18 @@ document.addEventListener('click', e => {
   }
 });
 
-if (contactsLink) {
-  contactsLink.addEventListener('click', e => {
-    document.querySelector('.modal--feedback').classList
-    .remove('modal--hide');
-    e.preventDefault();
+if (contacts) {
+  contacts.addEventListener('click', e => {
+    if (e.target.closest('.contacts__link')) {
+      document.querySelector('.modal--feedback').classList
+      .remove('modal--hide');
+      e.preventDefault();
+    }
+    if (e.target.closest('.contacts__map-link')) {
+      document.querySelector('.modal--map').classList
+      .remove('modal--hide');
+      e.preventDefault();
+    }
   });
 }
 
