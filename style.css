@@ -798,6 +798,8 @@ body {
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .slider__dot--active {
@@ -806,7 +808,6 @@ body {
 
 .slider__slide {
   position: relative;
-  display: none;
   flex-shrink: 0;
   width: 620px;
   min-height: 266px;
@@ -826,8 +827,8 @@ body {
   background-image: url("img/slide-perforator.jpg");
 }
 
-.slider__slide--active {
-  display: block;
+.slider__slide--change {
+  transform: translate(-100%);
 }
 
 .slider__name {
@@ -1067,6 +1068,8 @@ body {
   background-color: #ffffff;
   border: solid 3px #63a63e;
   transform: translateX(-50%);
+
+  cursor: pointer;
 }
 
 .merchandise__bookmark:hover {
@@ -1220,6 +1223,8 @@ body {
   border: none;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
+
+  cursor: pointer;
 }
 
 .services__button:hover {
