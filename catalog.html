@@ -15,7 +15,7 @@
     <div class="site-header__top-row">
       <div class="site-header__top-container">
         <a href="index.html" class="site-header__logo site-logo" aria-label="На главную">
-          <img src="img/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
+          <img src="img/icons/site-logo.svg" alt="Логотип магазина Техномарт" width="109" height="19" class="site-logo__img">
         </a>
         <form class="site-header__search-form search-form" action="https://echo.htmlacademy.ru" method="POST">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -314,7 +314,7 @@
   <footer class="site-footer">
     <div class="site-footer__row-one">
       <a href="index.html" class="site-footer__logo site-logo" aria-label="На главную">
-        <img src="img/site-logo-big.svg" alt="Логотип магазина Техномарт" width="138" height="23"
+        <img src="img/icons/site-logo-big.svg" alt="Логотип магазина Техномарт" width="138" height="23"
           class="site-logo__img">
       </a>
       <ul class="site-footer__site-navigation-list footer-navigation">
@@ -387,14 +387,16 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-add-product">
-    <h2 class="modal-add-product__title">Товар добавлен в корзину!</h2>
-    <div class="modal-add-product__bottom-row">
-      <a href="catalog.html" class="modal__link modal__link--red">Оформить заказ</a>
-      <a href="#" class="modal__link modal__link--white">Продолжить покупки</a>
-    </div>
-    <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
-  </section>
+  <div class="modal modal--add-product modal--hide">
+    <section class="modal-add-product">
+      <h2 class="modal-add-product__title">Товар добавлен в корзину!</h2>
+      <div class="modal-add-product__bottom-row">
+        <a href="catalog.html" class="modal-add-product__link modal-add-product__link--order button">Оформить заказ</a>
+        <a href="#" class="modal-add-product__link modal-add-product__link--white modal-add-product__link--shop button">Продолжить покупки</a>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть форму покупки"></button>
+    </section>
+  </div>
   <script src="/js/index.js"></script>
 </body>
 
