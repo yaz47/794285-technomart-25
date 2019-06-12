@@ -1432,7 +1432,7 @@ body {
   width: 14px;
   height: 12px;
 
-  background-image: url("/img/icons/icon-house.svg");
+  background-image: url("img/icons/icon-house.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2241,7 +2241,7 @@ body {
   font-weight: normal;
   line-height: 1.38;
   text-align: left;
-  color:  #000000;
+  color: #000000;
 
   background-color: #ffffff;
   border: solid 2px #dee3e4;

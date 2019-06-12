@@ -86,7 +86,7 @@ if (merchList && buyElem && buyCountElem &&
       buyElem.classList.add('site-header__basket--active');
       buyCountElem.textContent = +buyCountElem.textContent + 1 + '';
       document.querySelector('.modal--add-product').classList
-      .remove('modal--hide');
+        .remove('modal--hide');
       e.preventDefault();
     }
     if (e.target.closest('.merchandise__bookmark')) {
