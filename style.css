@@ -1255,7 +1255,8 @@ body {
   width: 700px;
   min-height: 352px;
   padding-top: 65px;
-  padding-right: 342px;
+  padding-right: 240px;
+  padding-bottom: 10px;
   padding-left: 80px;
 
   background-repeat: no-repeat;
@@ -1297,8 +1298,12 @@ body {
   margin-top: 23px;
 }
 
+.services__slide-description--tight {
+  margin-right: 105px;
+}
+
 .services__link {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .two-columns {
@@ -1328,6 +1333,11 @@ body {
 
 .description__text {
   margin-top: 24px;
+}
+
+.description__text--tight {
+  display: inline-block;
+  margin-right: 120px;
 }
 
 .description__list {
