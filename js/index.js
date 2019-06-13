@@ -15,16 +15,30 @@ const bookmarksCountElem = bookmarksElem
 document.addEventListener('keyup', (evt) => {
   if (evt.code === 'Escape') {
     document.querySelectorAll('.modal')
-      .forEach((elem) => elem.classList.add('modal--hide'));
+      .forEach((elem) => {
+        if (!elem.classList.contains('modal--hide')) {
+          elem.firstElementChild.classList.add('modal--zoomOut');
+        }
+      });
   }
 });
 
 document.addEventListener('click', (evt) => {
-  if (evt.target.matches('.modal') ||
-    evt.target.matches('.modal-close') ||
+  if (evt.target.matches('.modal-close') ||
     evt.target.matches('.modal-add-product__link--shop')) {
     evt.preventDefault();
+    evt.target.closest('.modal-block').classList.add('modal--zoomOut');
+  }
+
+  if (evt.target.matches('.modal')) {
+    evt.target.firstElementChild.classList.add('modal--zoomOut');
+  }
+});
+
+document.addEventListener('animationend', (evt) => {
+  if (evt.target.matches('.modal--zoomOut')) {
     evt.target.closest('.modal').classList.add('modal--hide');
+    evt.target.classList.remove('modal--zoomOut');
   }
 });
 
@@ -35,6 +49,7 @@ if (contacts) {
       document.querySelector('.modal--feedback').classList
         .remove('modal--hide');
     }
+
     if (evt.target.closest('.contacts__map-link')) {
       evt.preventDefault();
       document.querySelector('.modal--map').classList
@@ -90,6 +105,7 @@ if (merchList && buyElem && buyCountElem &&
       document.querySelector('.modal--add-product').classList
         .remove('modal--hide');
     }
+
     if (evt.target.closest('.merchandise__bookmark')) {
       bookmarksElem.classList.add('site-header__bookmarks--active');
       bookmarksCountElem.textContent = +bookmarksCountElem.textContent + 1 + '';
