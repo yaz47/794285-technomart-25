@@ -2403,3 +2403,37 @@ body {
 .modal-close:after {
   transform: rotate(-45deg);
 }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.modal--zoomIn {
+  animation: zoomIn 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-50%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.modal--zoomOut {
+  animation: zoomOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
