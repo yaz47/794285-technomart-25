@@ -391,8 +391,7 @@ body {
 }
 
 .user__login,
-.user__registry,
-.user__name {
+.user__registry {
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -457,19 +456,37 @@ body {
 }
 
 .user__name {
-  justify-content: flex-start;
+  position: relative;
   min-width: 299px;
   min-height: 45px;
   margin-top: 2px;
-  padding-right: 47px;
-  padding-left: 47px;
+  padding: 11px 47px 5px 47px;
+
+  background-color: #ffffff;
 }
 
 .user__name-profile {
+  position: relative;
+  display: inline-block;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: left;
+  color: #000000;
+}
+
+.user__name-profile:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user__name-profile::before {
+  content: "";
+
   position: absolute;
-  top: 13px;
-  left: 13px;
-  display: block;
+  top: 2px;
+  left: -34px;
   width: 20px;
   height: 18px;
 
@@ -495,14 +512,14 @@ body {
   opacity: 0.3;
 }
 
-.user__name-profile:hover,
+.user__name-profile:hover::before,
 .user__name-logout:hover {
   opacity: 1;
 }
 
-.user__name-profile:active,
+.user__name-profile:active::before,
 .user__name-logout:active {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .user__link {
