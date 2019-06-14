@@ -57,6 +57,7 @@ body {
   font-weight: normal;
   line-height: 1.29;
   text-align: center;
+  vertical-align: top;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -138,7 +139,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: 1.1;
-  vertical-align: middle;
+  vertical-align: top;
   color: #000000;
 
   border: none;
@@ -474,6 +475,7 @@ body {
   font-weight: normal;
   line-height: 1.1;
   text-align: left;
+  vertical-align: top;
   color: #000000;
 }
 
@@ -530,6 +532,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.13;
+  vertical-align: top;
   color: #32425c;
   text-decoration: underline;
 }
@@ -599,6 +602,7 @@ body {
   font-weight: normal;
   line-height: 3.27;
   text-align: center;
+  vertical-align: top;
   color: #ffffff;
 }
 
@@ -710,8 +714,9 @@ body {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.29;
-  color: #ffffff;
   text-align: center;
+  vertical-align: top;
+  color: #ffffff;
   text-transform: uppercase;
 
   border-radius: 3px;
@@ -848,6 +853,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.1;
+  vertical-align: top;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -895,6 +901,7 @@ body {
   font-size: 30px;
   font-weight: normal;
   line-height: 1.1;
+  vertical-align: top;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -952,6 +959,7 @@ body {
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
+  vertical-align: top;
   color: #000000;
 }
 
@@ -965,6 +973,7 @@ body {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
+  vertical-align: top;
   color: #a9a9a9;
   text-transform: uppercase;
   text-decoration: line-through;
@@ -1197,6 +1206,8 @@ body {
   margin-top: 25px;
   margin-right: 530px;
   padding: 0;
+
+  vertical-align: top;
 }
 
 .services__slider {
@@ -1350,6 +1361,8 @@ body {
 .description__text--tight {
   display: inline-block;
   margin-right: 120px;
+
+  vertical-align: top;
 }
 
 .description__list {
@@ -1405,6 +1418,8 @@ body {
   margin-top: 24px;
   margin-right: 80px;
   margin-bottom: 30px;
+
+  vertical-align: top;
 }
 
 .contacts__link {
@@ -1478,7 +1493,7 @@ body {
   font-weight: normal;
   line-height: 1.38;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1640,6 +1655,7 @@ body {
   font-weight: normal;
   line-height: 1.06;
   text-align: center;
+  vertical-align: top;
   color: #000000;
   text-transform: uppercase;
 
@@ -1842,6 +1858,8 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
+
+  vertical-align: middle;
 
   border-bottom: 10px solid #000000;
   border-right: 5px solid transparent;
@@ -2060,6 +2078,7 @@ body {
   font-weight: normal;
   line-height: 1.33;
   text-align: left;
+  vertical-align: top;
   color: #ffffff;
 }
 
@@ -2076,6 +2095,7 @@ body {
   font-weight: normal;
   line-height: 1.13;
   text-align: left;
+  vertical-align: top;
   color: #ffffff;
 }
 
@@ -2237,6 +2257,7 @@ body {
   font-weight: normal;
   line-height: 1.1;
   text-align: left;
+  vertical-align: top;
   color: #000000;
 }
 
@@ -2310,6 +2331,7 @@ body {
   font-weight: normal;
   line-height: 1.1;
   text-align: left;
+  vertical-align: top;
   color: #000000;
 }
 
