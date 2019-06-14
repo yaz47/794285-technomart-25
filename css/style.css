@@ -252,7 +252,7 @@ body {
   width: 14px;
   height: 16px;
 
-  background-image: url("img/icons/icon-bookmark.svg");
+  background-image: url("../img/icons/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -276,7 +276,7 @@ body {
   width: 15px;
   height: 15px;
 
-  background-image: url("img/icons/icon-cart.svg");
+  background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -365,7 +365,7 @@ body {
   width: 19px;
   height: 19px;
 
-  background-image: url("img/icons/icon-phone.svg");
+  background-image: url("../img/icons/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -434,7 +434,7 @@ body {
   width: 20px;
   height: 17px;
 
-  background-image: url("img/icons/icon-login.svg");
+  background-image: url("../img/icons/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -490,7 +490,7 @@ body {
   width: 20px;
   height: 18px;
 
-  background-image: url("img/icons/icon-user.svg");
+  background-image: url("../img/icons/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -505,7 +505,7 @@ body {
   width: 20px;
   height: 17px;
 
-  background-image: url("img/icons/icon-logout.svg");
+  background-image: url("../img/icons/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -644,31 +644,31 @@ body {
 
 .card--orange {
   background-color: #ffbf47;
-  background-image: url("img/icons/badge-bucket.svg");
+  background-image: url("../img/icons/badge-bucket.svg");
   background-position: 83% 52%;
 }
 
 .card--blue {
   background-color: #3bbce3;
-  background-image: url("img/icons/badge-screwdriver.svg");
+  background-image: url("../img/icons/badge-screwdriver.svg");
   background-position: 88% 52%;
 }
 
 .card--pink {
   background-color: #dc91d8;
-  background-image: url("img/icons/badge-tractor.svg");
+  background-image: url("../img/icons/badge-tractor.svg");
   background-position: 86% 50%;
 }
 
 .card--green {
   background-color: #8ed78f;
-  background-image: url("img/icons/badge-cart.svg");
+  background-image: url("../img/icons/badge-cart.svg");
   background-position: 81% 49%;
 }
 
 .card--yellow {
   background-color: #ffc047;
-  background-image: url("img/icons/badge-truck.svg");
+  background-image: url("../img/icons/badge-truck.svg");
   background-position: 86% 51%;
 }
 
@@ -682,7 +682,7 @@ body {
   width: 60px;
   height: 59px;
 
-  background-image: url("img/new-flag.png");
+  background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
 }
 
@@ -830,11 +830,11 @@ body {
 }
 
 .slider__slide--drill {
-  background-image: url("img/slide-drill.jpg");
+  background-image: url("../img/slide-drill.jpg");
 }
 
 .slider__slide--perforator {
-  background-image: url("img/slide-perforator.jpg");
+  background-image: url("../img/slide-perforator.jpg");
 }
 
 .slider__slide--change {
@@ -1050,7 +1050,7 @@ body {
   width: 15px;
   height: 15px;
 
-  background-image: url("img/icons/icon-cart.svg");
+  background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
 
   opacity: 0.3;
@@ -1280,15 +1280,15 @@ body {
 }
 
 .services__slide--delivery {
-  background-image: url("img/slide-delivery.png");
+  background-image: url("../img/slide-delivery.png");
 }
 
 .services__slide--guarantee {
-  background-image: url("img/slide-guarantee.png");
+  background-image: url("../img/slide-guarantee.png");
 }
 
 .services__slide--credit {
-  background-image: url("img/slide-credit.png");
+  background-image: url("../img/slide-credit.png");
 }
 
 .services__slide-title {
@@ -1444,7 +1444,7 @@ body {
   width: 14px;
   height: 12px;
 
-  background-image: url("img/icons/icon-house.svg");
+  background-image: url("../img/icons/icon-house.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1694,7 +1694,7 @@ body {
   height: 23px;
 
   border: none;
-  background-image: url("img/icons/icon-checkboxon.svg");
+  background-image: url("../img/icons/icon-checkboxon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -2119,15 +2119,15 @@ body {
 }
 
 .social__button--vk {
-  background-image: url("img/icons/icon-vk.svg");
+  background-image: url("../img/icons/icon-vk.svg");
 }
 
 .social__button--fb {
-  background-image: url("img/icons/icon-fb.svg");
+  background-image: url("../img/icons/icon-fb.svg");
 }
 
 .social__button--insta {
-  background-image: url("img/icons/icon-insta.svg");
+  background-image: url("../img/icons/icon-insta.svg");
 }
 
 .site-footer__feedback,
@@ -2322,7 +2322,7 @@ body {
   width: 66px;
   height: 66px;
 
-  background-image: url("img/icons/modal-check.svg");
+  background-image: url("../img/icons/modal-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
