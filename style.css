@@ -924,6 +924,7 @@ body {
   min-height: 318px;
   margin-top: 20px;
   margin-left: 20px;
+  padding-bottom: 10px;
 
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
@@ -957,7 +958,7 @@ body {
 .merchandise__old-price {
   position: absolute;
   left: 50%;
-  bottom: 22%;
+  top: -27px;
   display: inline-block;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -1009,7 +1010,7 @@ body {
 
 .merchandise__buy-link {
   position: absolute;
-  top: 14%;
+  top: 44px;
   left: 50%;
   display: none;
   width: 135px;
@@ -1063,7 +1064,7 @@ body {
 
 .merchandise__bookmark {
   position: absolute;
-  top: 28%;
+  top: 90px;
   left: 50%;
   display: none;
   width: 135px;
