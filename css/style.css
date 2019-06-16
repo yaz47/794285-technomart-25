@@ -881,6 +881,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  height: 88px;
   min-height: 89px;
   padding: 5px;
   padding-right: 24px;
@@ -948,6 +949,7 @@ body {
 
 .merchandise__name {
   display: inline-block;
+  max-width: 100%;
   margin: 0;
   margin-top: 10px;
   margin-right: 15px;
@@ -1437,6 +1439,10 @@ body {
 .catalog__two-columns {
   display: flex;
   margin-top: 20px;
+}
+
+.catalog__column-two {
+  width: 700px;
 }
 
 .breadcrumbs {
@@ -2210,13 +2216,11 @@ body {
 
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
-
-  transform: translateX(-50%);
 }
 
 .modal-feedback {
   top: 337px;
-  left: 50%;
+  left: calc(100vw / 2 - 620px / 2);
   width: 620px;
   min-height: 430px;
 
@@ -2306,14 +2310,14 @@ body {
 
 .modal-map {
   top: 200px;
-  left: 50%;
+  left: calc(100vw / 2 - 940px / 2);
   width: 940px;
   min-height: 446px;
 }
 
 .modal-add-product {
   top: 410px;
-  left: 50%;
+  left: calc(100vw / 2 - 620px / 2);
   width: 620px;
   min-height: 282px;
 
@@ -2430,7 +2434,7 @@ body {
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: translateX(-50%) scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   50% {
@@ -2449,7 +2453,7 @@ body {
 
   50% {
     opacity: 0;
-    transform: translateX(-50%) scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   100% {
