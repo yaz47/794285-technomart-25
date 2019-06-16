@@ -311,7 +311,7 @@ body {
   min-height: 138px;
   margin: 0;
   margin-top: 12px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   padding: 0;
   padding-top: 5px;
   padding-right: 55px;
@@ -617,7 +617,7 @@ body {
 .site-description {
   width: 940px;
   margin: 0 auto;
-  margin-top: 58px;
+  margin-top: 59px;
 }
 
 .site-description__wrapper {
@@ -878,11 +878,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  height: 88px;
-  min-height: 89px;
-  padding: 5px;
-  padding-right: 24px;
-  padding-left: 28px;
+  padding: 10px 24px 10px 28px;
 
   background-color: #f9f5f0;
 }
@@ -891,8 +887,8 @@ body {
   display: inline-block;
   max-width: 60%;
   margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -905,8 +901,10 @@ body {
 }
 
 .section-title__button {
-  width: 253px;
   flex-shrink: 0;
+  width: 253px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .merchandise {
@@ -921,15 +919,13 @@ body {
 
 .merchandise__item {
   position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
   width: 220px;
   min-height: 318px;
   margin-top: 20px;
   margin-left: 20px;
   padding-bottom: 10px;
+
+  text-align: center;
 
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
@@ -947,10 +943,7 @@ body {
 .merchandise__name {
   display: inline-block;
   max-width: 100%;
-  margin: 0;
-  margin-top: 10px;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px 15px 15px;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -965,7 +958,7 @@ body {
 .merchandise__old-price {
   position: absolute;
   left: 50%;
-  top: -27px;
+  top: -28px;
   display: inline-block;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -982,19 +975,19 @@ body {
 
 .merchandise__price {
   position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   width: 141px;
   min-height: 38px;
-  margin-top: 40px;
-  margin-left: 7px;
+  margin-top: 27px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 41px;
+  padding: 10px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1489,7 +1482,7 @@ body {
 .breadcrumbs__link {
   position: relative;
   display: inline-block;
-  margin: 21px 19px 20px 23px;
+  margin: 21px 19px 21px 23px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1629,7 +1622,6 @@ body {
 .filter-form__input-wrapper {
   position: relative;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 24px;
 }
 
@@ -1664,6 +1656,10 @@ body {
 
   border: none;
   background-color: #f7f3ec;
+}
+
+.filter-form__input:nth-child(2) {
+  margin-left: auto;
 }
 
 .filter-form__list {
@@ -1741,32 +1737,20 @@ body {
   cursor: pointer;
 }
 
-.filter-form__radio:checked+.filter-form__label::after {
-  content: "";
-
-  position: absolute;
-  top: 7px;
-  left: -26px;
-  width: 9px;
-  height: 9px;
-
-  background-color: #b5b5b5;
-  border-radius: 50%;
-
-  opacity: 0.7;
-  cursor: pointer;
+.filter-form__radio:checked+.filter-form__label::before {
+  border: none;
+  background-image: url("../img/icons/icon-radioon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.filter-form__label:hover::before,
-.filter-form__checkbox:checked+.filter-form__label:hover::before,
-.filter-form__radio:checked+.filter-form__label:hover::after {
+.filter-form__label:hover::before {
   opacity: 1;
 }
 
 .filter-form__checkbox:disabled+.filter-form__label::before,
 .filter-form__checkbox:disabled+.filter-form__label,
 .filter-form__radio:disabled+.filter-form__label::before,
-.filter-form__radio:disabled+.filter-form__label::after,
 .filter-form__radio:disabled+.filter-form__label {
   opacity: 0.3;
 }
@@ -1812,7 +1796,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: center;
   min-height: 38px;
   padding: 5px;
 
@@ -1821,6 +1804,8 @@ body {
 
 .catalog-sort__title {
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 15px;
   padding: 0;
 
@@ -2088,7 +2073,7 @@ body {
 .site-footer__copyright {
   display: inline-block;
   flex-shrink: 0;
-  width: 230px;
+  width: 231px;
   margin: 0;
   margin-top: 35px;
   padding: 0;
