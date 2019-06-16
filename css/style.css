@@ -2219,7 +2219,7 @@ body {
 }
 
 .modal-feedback {
-  top: 337px;
+  top: 35vh;
   left: calc(100vw / 2 - 620px / 2);
   width: 620px;
   min-height: 430px;
@@ -2309,14 +2309,14 @@ body {
 }
 
 .modal-map {
-  top: 200px;
+  top: 20vh;
   left: calc(100vw / 2 - 940px / 2);
   width: 940px;
   min-height: 446px;
 }
 
 .modal-add-product {
-  top: 410px;
+  top: 42vh;
   left: calc(100vw / 2 - 620px / 2);
   width: 620px;
   min-height: 282px;
