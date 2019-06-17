@@ -65,19 +65,7 @@ if (slider) {
       (evt.target.closest('.slider__dot') &&
         !evt.target.closest('.slider__dot').classList
         .contains('slider__dot--active'))) {
-      slider.querySelectorAll('.slider__slide').forEach((elem) => elem.classList.toggle('slider__slide--change'));
-      slider.querySelectorAll('.slider__dot').forEach((elem) => elem.classList.toggle('slider__dot--active'));
-    }
-  });
-
-  slider.addEventListener('focusin', (evt) => {
-    if ((evt.target.matches('.slider__button--first') &&
-        evt.target.closest('.slider__slide').classList
-        .contains('slider__slide--change')) ||
-      (evt.target.matches('.slider__button--second') &&
-        !evt.target.closest('.slider__slide').classList
-        .contains('slider__slide--change'))) {
-      slider.querySelectorAll('.slider__slide').forEach((elem) => elem.classList.toggle('slider__slide--change'));
+      slider.querySelectorAll('.slider__slide').forEach((elem) => elem.classList.toggle('slider__slide--none'));
       slider.querySelectorAll('.slider__dot').forEach((elem) => elem.classList.toggle('slider__dot--active'));
     }
   });
