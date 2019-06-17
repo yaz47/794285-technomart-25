@@ -2274,6 +2274,7 @@ body {
 
 .feedback-form__text-input:focus {
   border: solid 2px #ee3643;
+  outline: none;
 }
 
 .feedback-form__textarea {
